@@ -1,0 +1,35 @@
+.btn{
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 1.6rem;
+
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem $color-button-secondary;
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem $color-button-secondary;
+    }
+
+    &--yellow {
+        background-color: $color-button;
+        color: $color-primary;
+    }
+
+    &--animated {
+        animation: moveInBottom .7s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+}
