@@ -43,7 +43,7 @@
   box-sizing: inherit; }
 
 html {
-  background-color: black;
+  background-color: white;
   font-size: 62.5%; }
 
 /* font-family: "Lato" (if it is available), sans-serif (if the first is not avaliabe); */
@@ -58,7 +58,7 @@ body {
   padding: 3rem; }
 
 .heading-primary {
-  color: #f7c873;
+  color: #2A0F94;
   text-transform: uppercase;
   text-align: center;
   backface-visibility: hidden;
@@ -78,6 +78,12 @@ body {
     letter-spacing: 1.5rem;
     animation: moveInRight 3s ease-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #5941b9, #16055b); }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -90,15 +96,15 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(247, 200, 115, 0.5); }
+  box-shadow: 0 1rem 2rem rgba(41, 15, 148, 0.5); }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(247, 200, 115, 0.5); }
+  box-shadow: 0 0.5rem 1rem rgba(41, 15, 148, 0.5); }
 
 .btn--yellow {
-  background-color: #f7c873;
-  color: black; }
+  background-color: #290f94;
+  color: white; }
 
 .btn--animated {
   animation: moveInBottom .7s ease-out .75s;
@@ -134,7 +140,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.58)), url(../img/capa_web_site.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.58)), url(../img/capa_web_site.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -151,6 +157,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
 
 /*
 TO KEEP NODE WATCHING, YOU MUST EXECUTE
