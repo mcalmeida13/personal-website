@@ -58,14 +58,14 @@ body {
   padding: 3rem; }
 
 .heading-primary {
-  color: #2A0F94;
+  color: #f7f7f7;
   text-transform: uppercase;
   text-align: center;
   backface-visibility: hidden;
   margin-bottom: 1.5rem; }
   .heading-primary--main {
     display: block;
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
     animation-name: moveInLeft;
@@ -82,7 +82,38 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #5941b9, #16055b); }
+  display: inline-block;
+  background-image: linear-gradient(to right, #5941b9, #16055b);
+  -webkit-background-clip: text;
+  letter-spacing: .2rem;
+  transition: all .2s;
+  color: transparent; }
+  .heading-secondary:hover {
+    text-shadow: 0.5rem 1rem 2rem #777777;
+    transform: scale(1.01); }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 100; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -96,23 +127,41 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(41, 15, 148, 0.5); }
+  box-shadow: 0 1rem 2rem rgba(89, 65, 185, 0.5); }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(41, 15, 148, 0.5); }
+  box-shadow: 0 0.5rem 1rem rgba(89, 65, 185, 0.5); }
 
-.btn--yellow {
-  background-color: #290f94;
-  color: white; }
+.btn--blue {
+  background-color: #f7f7f7;
+  color: #777; }
 
 .btn--animated {
   animation: moveInBottom .7s ease-out .75s;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #2A0F94;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #2A0F94;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #2A0F94;
+  color: #f7f7f7;
+  box-shadow: 0rem 1rem 2rem #777777;
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0rem 0.5rem 1rem #777777;
+  transform: translateY(0); }
+
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -121,7 +170,6 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: orangered;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
@@ -140,7 +188,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.58)), url(../img/capa_web_site.jpg);
+  background-image: linear-gradient(to right bottom, rgba(42, 15, 148, 0.83), rgba(42, 15, 148, 0.58)), url(../img/capa_web_site.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
